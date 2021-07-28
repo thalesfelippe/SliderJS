@@ -18,8 +18,15 @@ header {
 }
 
 .header {
-    height: 50px;
-    background-color: red;
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    text-shadow: 0px 1px 1px #000;
+    font-size: 70px;
+    font-weight: bold;
+    border-bottom: 1px solid #FFF;
 }
 
 .slider {
@@ -38,6 +45,12 @@ header {
     height: inherit;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    text-shadow: 0px 1px 1px #000;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .slider-controls {
@@ -52,8 +65,30 @@ header {
 .slider-control {
     width: 50px;
     height: 50px;
-    background-color: #fff;
+    background-color: #333;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
+}
+
+.slider-control:first-child {
+    margin-left: 20px;
+}
+
+.slider-control:last-child {
+    margin-right: 20px;
+}
+
+.slider-control i {
+    color: #FFF;
+    font-size: 45px;
+    margin-top: 2px;
+}
+
+.slider-control .fa-angle-left {
+    margin-left: 10px;
+}
+
+.slider-control .fa-angle-right {
+    margin-left: 15px;
 }
